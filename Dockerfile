@@ -6,7 +6,7 @@ COPY target/ems-backend-0.0.1-SNAPSHOT.jar app.jar
 # Expose the port your Spring Boot application runs on
 EXPOSE 8080
 # Define environment variables for the database (optional, if configured in the application.properties/yml)
-ENV SPRING_DATASOURCE_URL=jdbc:mysql://dataa.mysql.database.azure.com:3306?createDatabaseIfNotExist=true
+ENV SPRING_DATASOURCE_URL=jdbc:mysql://dataa.mysql.database.azure.com:3306/DbOffice?createDatabaseIfNotExist=true
 ENV SPRING_DATASOURCE_USERNAME=dhanush
 ENV SPRING_DATASOURCE_PASSWORD=Dhanush@12345
 # Command to run the application
